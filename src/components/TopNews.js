@@ -15,7 +15,7 @@ const TopNews = ({ category = "general" }) => {
         );
         const data = await response.json();
         if (data.articles) {
-          setNews(data.articles.slice(0, 5));
+          setNews(data.articles.slice(0, 5));  // articles
         }
       } catch (error) {
         console.error("Error fetching news:", error);
